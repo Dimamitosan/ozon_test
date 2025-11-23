@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="progress.css" />
+  </head>
+  <body>
+    <div class="progress-container">
+      <div class="progress-circle">
+        <svg width="130" height="130" viewBox="0 0 100 100">
+          <circle
+            cx="50"
+            cy="50"
+            r="45"
+            fill="none"
+            stroke="#eef3f6"
+            stroke-width="8"
+          />
+          <circle
+            class="progress__circle"
+            cx="50"
+            cy="50"
+            r="45"
+            fill="none"
+            stroke="#005cff"
+            stroke-width="8"
+            stroke-dasharray="280"
+            stroke-dashoffset="280"
+            transform="rotate(-90 50 50)"
+          />
+        </svg>
+      </div>
+      <div class="progress-buttons">
+        <div class="progress-button__container">
+          <input
+            data-role="progress__input"
+            class="progress__input"
+            type="text"
+          />
+          <p>Value</p>
+        </div>
+        <div class="progress-switch__container">
+          <label class="progress-switch">
+            <input data-role="progeress-toggle__animate" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <p>Animate</p>
+        </div>
+        <div class="progress-switch__container">
+          <label class="progress-switch">
+            <input data-role="progress-tongle__hide" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <p>Hide</p>
+        </div>
+      </div>
+    </div>
+    <script src="progress.js"></script>
+  </body>
+</html>
